@@ -31,7 +31,7 @@ describe('Test for wind-speed-sensor driver', function () {
                 done(error);
                 return;
             }
-            assert(velocity, expectedVelocity);
+            assert.equal(velocity, expectedVelocity);
             done();
         });
     });
